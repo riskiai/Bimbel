@@ -1,0 +1,70 @@
+/*=== Parallax Background ===*/
+.fixed-bg,
+.parallax-bg {
+  background-position: center;
+  height:100%;
+  width:100%;
+  margin:0;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-2;
+}
+.fixed-bg {
+  background-attachment: scroll;
+  background-size:cover;
+}
+
+
+
+
+.fixed-bg.patern-bg,
+.parallax-bg.patern-bg {background-size: initial;}
+.fixed-bg.bg-norepeate {
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.back-blend-multiply {background-blend-mode: multiply;}
+
+
+.fixed-bg.patern-bg,
+.parallax-bg.patern-bg {background-size: initial;}
+
+.dark-bg {background-color: #272727;}
+
+
+.back-blend-multiply {background-blend-mode: multiply;}
+
+
+
+/*=== Background Layer ===*/
+.black-layer:before,
+
+.dark-layer:before,
+.dark-layer2:before,
+.dark-layer3:before
+ {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.dark-layer:before {background-color: #272727;}
+.dark-layer2:before {background-color: var(--color1);}
+.dark-layer3:before {background-color: var(--color7);}
+
+
+.paralx-70:before,
+.paralx-70 .fixed-bg {height: 70%;}
+
+.paralx-52:before,
+.paralx-52 .fixed-bg {height: 52%;}
+
+/*=== Opacity ===*/
+
+.opc85:before {opacity: .85;}
